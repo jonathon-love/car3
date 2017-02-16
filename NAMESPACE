@@ -23,10 +23,6 @@ importFrom("stats", "naprint", "symnum")
 
 importFrom(MASS, cov.trob, polr, rlm)
 importFrom(nnet, multinom)
-importFrom(pbkrtest, KRmodcomp, # KRmodcomp.lmerMod, KRmodcomp.mer, 
-           vcovAdj) #, vcovAdj.lmerMod, vcovAdj.mer)
-importFrom(mgcv, gam, s)
-importFrom(quantreg, rqss, qss, fitted.rqss)
 importFrom(graphics, abline, arrows, axis, box, boxplot, contour, hist, identify, 
     layout, legend, lines, locator, mtext, pairs, par, plot, points, polygon, 
     rug, segments, strheight, strwidth, text)

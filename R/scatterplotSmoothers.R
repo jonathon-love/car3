@@ -84,6 +84,8 @@ loessLine <- function(x, y, col, log.x, log.y, spread=FALSE, smoother.args,
 
 gamLine <- function(x, y, col, log.x, log.y, spread=FALSE, smoother.args,
               draw=TRUE, offset=0) {
+    gam <- mgcv::gam
+    s <- mgcv::s
 #    if (!require("mgcv")) stop("mgcv package missing")
     lty <- default.arg(smoother.args, "lty", 1)
     lwd <- default.arg(smoother.args, "lwd", 2)
@@ -157,6 +159,8 @@ gamLine <- function(x, y, col, log.x, log.y, spread=FALSE, smoother.args,
 
 quantregLine <- function(x, y, col, log.x, log.y, spread=FALSE, smoother.args,
                    draw=TRUE, offset=0) {
+    qss <- quantreg::qss
+    rqss <- quantreg::rqss
 #    if (!require("quantreg")) stop("quantreg package missing")
     if (!package.installed("Matrix")) stop("the Matrix package is missing")
     if (!package.installed("MatrixModels")) stop("the MatrixModels package is missing")

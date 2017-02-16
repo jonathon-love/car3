@@ -1,0 +1,12 @@
+Changes to Version 3.0-0
+
+  o This version of the package corresponds to the third edition of Fox and Weisberg, An R Companion to Applied Regression (Sage, forthcoming).
+
+  o Changes to the car version 2 and earlier are in the NEWS for car
+  
+  o Reorganized plotting functions.
+  
+  o Functions deprecated in 2009 are now defunct.
+  
+  o All data sets moved to the carData pakage.
+  
